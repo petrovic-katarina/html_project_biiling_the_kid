@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: url("../slike/intro.jpg");
+  background-size: cover;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #374249;
+  color: white;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 1.5rem;
+}
+header nav ul li {
+  cursor: pointer;
+}
+header nav ul > li,
+header nav img {
+  margin: 1em 2em;
+}
+header nav div {
+  background-color: #f38181;
+  margin-left: 2em;
+}
+header nav div > img {
+  width: 2em;
+}
+header div.cover {
+  background-color: rgba(55, 66, 73, 0.5019607843);
+  text-align: center;
+  margin-top: 30em;
+  padding: 0.5em;
+}
+header div.cover h1 {
+  font-size: 48px;
+}
+header div.cover h1,
+header div.cover h2,
+header div.cover p {
+  color: white;
+}
+
+section.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5em;
+  padding: 2em 10em;
+}
+section.buttons button {
+  background-color: white;
+  padding: 1em 2em;
+  border-radius: 3em;
+  border-width: 1px;
+  border-color: lightgrey;
+  cursor: pointer;
+}
+
+section.promos {
+  background-color: #f3f7f9;
+  padding: 1em 10em;
+}
+section.promos img {
+  width: 20%;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+section.promos div.promo {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+section.promos div.promo h2 {
+  color: #374249;
+}
+section.promos div.promo p {
+  color: #f38181;
+}
+section.promos div.promo div {
+  visibility: hidden;
+}
+section.promos div.promo:hover div {
+  visibility: visible;
+}
+section.promos div.promo:hover img {
+  opacity: 1;
+}
+section.promos div.reversed {
+  flex-direction: row-reverse;
+}
+
+section.pricing {
+  padding: 1em;
+}
+section.pricing h1,
+section.pricing p {
+  text-align: center;
+  margin: 1em 2em;
+}
+section.pricing button {
+  display: none;
+}
+section.pricing table {
+  margin: 2em auto;
+  width: 60%;
+  border-collapse: collapse;
+}
+section.pricing table td,
+section.pricing table th {
+  border: 1px #cfd1d3 solid;
+  text-align: center;
+  padding: 0.5em 1em;
+}
+section.pricing table .red {
+  background-color: #f38181;
+  color: white;
+}
+section.pricing table .dark {
+  background-color: #374249;
+  color: white;
+}
+section.pricing table .no-border {
+  border: none;
+}
+
+section.contact {
+  padding: 1em 10em;
+  background-color: #f3f7f9;
+}
+section.contact h1 {
+  text-align: center;
+  margin: 1em 2em;
+}
+section.contact div.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+section.contact iframe {
+  width: 30%;
+}
+section.contact form {
+  width: 60%;
+  padding: 1.5em;
+  background-color: #f38181;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+section.contact form div.flex-row {
+  gap: 2em;
+}
+section.contact form input {
+  height: 2em;
+}
+section.contact form select {
+  width: 20%;
+  background-color: white;
+}
+section.contact form input,
+section.contact form textarea {
+  display: inline-block;
+  width: 100%;
+}
+section.contact form input,
+section.contact form select,
+section.contact form textarea {
+  border: none;
+  padding: 0.4em;
+}
+
+footer {
+  background-color: #374249;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+
+footer span {
+  color: #f38181;
+}
+
+/*# sourceMappingURL=style.css.map */

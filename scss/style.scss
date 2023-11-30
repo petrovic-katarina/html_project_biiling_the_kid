@@ -1,0 +1,239 @@
+@import "vars";
+@import "mixins";
+
+@include base;
+
+// Header
+
+header {
+  background-image: url("../slike/intro.jpg");
+  background-size: cover;
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: $tamno_plava;
+    color: white;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      gap: 1.5rem;
+
+      li {
+        cursor: pointer;
+      }
+    }
+
+    ul>li,
+    img {
+      margin: 1em 2em;
+    }
+
+    div {
+      background-color: $crvena;
+      margin-left: 2em;
+    }
+
+    div>img {
+      width: 2em;
+    }
+  }
+
+  div.cover {
+    background-color: $tamno_plava_40;
+    text-align: center;
+    margin-top: 30em;
+    padding: 0.5em;
+
+    h1 {
+      font-size: 48px;
+    }
+
+    h1,
+    h2,
+    p {
+      color: white;
+    }
+  }
+}
+
+// Header
+// Buttons
+section.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5em;
+  padding: 2em 10em;
+
+  button {
+    background-color: white;
+    padding: 1em 2em;
+    border-radius: 3em;
+    border-width: 1px;
+    border-color: lightgrey;
+    cursor: pointer;
+  }
+}
+
+// Buttons
+// Promo
+section.promos {
+  background-color: $svetlo_siva_pozadina_sekcije;
+  padding: 1em 10em;
+
+  img {
+    width: 20%;
+    border-radius: 50%;
+    opacity: 0.4;
+  }
+
+  div.promo {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+
+    h2 {
+      color: $tamno_plava;
+    }
+
+    p {
+      color: $crvena;
+    }
+
+    div {
+      visibility: hidden;
+    }
+
+    &:hover div {
+      visibility: visible;
+    }
+
+    &:hover img {
+      opacity: 1;
+    }
+  }
+
+  div.reversed {
+    flex-direction: row-reverse;
+  }
+}
+
+// Promo
+// Pricing
+section.pricing {
+  padding: 1em;
+
+  h1,
+  p {
+    text-align: center;
+    margin: 1em 2em;
+  }
+
+  button {
+    display: none;
+  }
+
+  table {
+    margin: 2em auto;
+    width: 60%;
+    border-collapse: collapse;
+
+    td,
+    th {
+      border: 1px $svetlo_siva_hover_dugme solid;
+      text-align: center;
+      padding: 0.5em 1em;
+    }
+
+    .red {
+      background-color: $crvena;
+      color: white;
+    }
+
+    .dark {
+      background-color: $tamno_plava;
+      color: white;
+    }
+
+    .no-border {
+      border: none;
+    }
+  }
+}
+
+
+// Pricing
+// Contact
+section.contact {
+  padding: 1em 10em;
+  background-color: $svetlo_siva_pozadina_sekcije;
+
+  h1 {
+    text-align: center;
+    margin: 1em 2em;
+  }
+
+  div.flex-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  iframe {
+    width: 30%;
+  }
+
+  form {
+    width: 60%;
+    padding: 1.5em;
+    background-color: $crvena;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+
+    div.flex-row {
+      gap: 2em;
+    }
+
+    input {
+      height: 2em;
+    }
+
+    select {
+      width: 20%;
+      background-color: white;
+    }
+
+    input,
+    textarea {
+      display: inline-block;
+      width: 100%;
+    }
+
+    input,
+    select,
+    textarea {
+      border: none;
+      padding: 0.4em;
+    }
+
+  }
+}
+
+// Contact
+
+footer {
+  background-color: $tamno_plava;
+  color: white;
+  text-align: center;
+
+  padding: 0.5em;
+}
+
+footer span {
+  color: $crvena;
+}
