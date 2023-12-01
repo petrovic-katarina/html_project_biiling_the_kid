@@ -25,7 +25,12 @@ header {
 
       li {
         cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
+
     }
 
     ul>li,
@@ -76,6 +81,12 @@ section.buttons {
     border-width: 1px;
     border-color: lightgrey;
     cursor: pointer;
+
+    &:hover {
+      background-color: gray;
+      color: white;
+
+    }
   }
 }
 

@@ -27,6 +27,9 @@ header nav ul {
 header nav ul li {
   cursor: pointer;
 }
+header nav ul li:hover {
+  text-decoration: underline;
+}
 header nav ul > li,
 header nav img {
   margin: 1em 2em;
@@ -66,6 +69,10 @@ section.buttons button {
   border-width: 1px;
   border-color: lightgrey;
   cursor: pointer;
+}
+section.buttons button:hover {
+  background-color: gray;
+  color: white;
 }
 
 section.promos {
