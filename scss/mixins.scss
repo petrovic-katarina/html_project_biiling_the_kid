@@ -8,3 +8,15 @@
     font-family: $roboto;
   }
 }
+
+@mixin srednji_ekran {
+  @media screen and (max-width: 1080px) {
+    @content
+  }
+}
+
+@mixin mali_ekran {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}

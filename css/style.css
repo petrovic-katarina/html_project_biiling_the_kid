@@ -111,6 +111,11 @@ section.pricing p {
 }
 section.pricing button {
   display: none;
+  background-color: white;
+  padding: 1em 2em;
+  border-radius: 3em;
+  border-width: 1px;
+  border-color: lightgrey;
 }
 section.pricing table {
   margin: 2em auto;
@@ -189,6 +194,73 @@ footer {
 
 footer span {
   color: #f38181;
+}
+
+@media screen and (max-width: 1080px) {
+  section.contact > div.flex-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.contact > div.flex-row iframe {
+    width: 50%;
+    height: 300px;
+  }
+  section.contact > div.flex-row form {
+    width: 100%;
+    margin: 1em;
+  }
+}
+@media screen and (max-width: 1080px) and (max-width: 768px) {
+  header {
+    background: none;
+  }
+  header nav {
+    flex-direction: column-reverse;
+  }
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-size: larger;
+  }
+  header nav div {
+    width: 100%;
+    margin: 0;
+  }
+  header div.cover {
+    margin: 0;
+    background-color: darkgray;
+  }
+  section.promos > div.promo {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5em;
+    margin: 1.5em;
+    pointer-events: none;
+  }
+  section.promos > div.promo img {
+    width: 60%;
+    opacity: 1;
+  }
+  section.promos > div.promo div {
+    visibility: visible;
+  }
+  section.pricing button {
+    display: block;
+    margin: 0 auto;
+  }
+  section.pricing button:hover + table {
+    display: block;
+  }
+  section.pricing table {
+    display: none;
+  }
+  section.contact {
+    padding: 1em;
+  }
+  section.contact div.flex-row iframe {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
